@@ -1,0 +1,9 @@
+# 项目排除路径
+/api/target/
+/array/target/
+/basic/target/
+/dp/target/
+/kmp/target/
+/sort/target/
+/stack/target/
+/tree/target/
