@@ -2,6 +2,7 @@ package org.example;
 
 public class LeetCode1_TwoSum
 {
+    //两数之和
     public int[] twoSum(int[] nums, int target) {
         for (int i = 0; i < nums.length; i++)
         {
