@@ -5,6 +5,11 @@ import com.weng.service.Star;
 import com.weng.util.ProxyUtil;
 import org.junit.Test;
 
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
 public class ProxyTest
 {
     @Test
