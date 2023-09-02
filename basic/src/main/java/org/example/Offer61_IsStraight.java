@@ -34,7 +34,7 @@ public class Offer61_IsStraight
 //        return nums[4]-nums[joker]<5;
 
         /**
-         * 集合+遍历
+         * set集合+遍历
          */
         Set<Integer>set=new HashSet<>();
         for (int num : nums)

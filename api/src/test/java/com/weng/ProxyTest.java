@@ -22,5 +22,6 @@ public class ProxyTest
         star.dance();
         star.rap("这种感觉我曾未有");
 
+
     }
 }
