@@ -2,7 +2,6 @@ package com.weng.bag;
 
 public class LeetCode494_TargetSum
 {
-    //todo 不会，目标和
     //求怎么使得left=(sum+target)/2
     public static int findTargetSumWays(int[] nums, int target) {
         int sum=0;
@@ -18,11 +17,18 @@ public class LeetCode494_TargetSum
         int left=(sum+target)/2;
         int [][]dp=new int[nums.length][left+1]; //在nums[0~i]中选，使其相加为left。有几种选法
         //初始化
-        for (int i = 0; i < nums.length; i++)
+        for (int i = 0; i < nums.length; i++)//nums[i]可以等于0，如果target再为0。那么有两种选法，选0或者什么都不选（这样也是0）
         {
-            dp[i][0]=1;
+            if (nums[i]==0)
+            {
+                dp[i][0]=2;
+            }
+            else
+            {
+                dp[i][0]=1;
+            }
         }
-        for (int i = 0; i <= left; i++)
+        for (int i = 1; i <= left; i++)
         {
             if (nums[0]==i)
             {
@@ -57,21 +63,6 @@ public class LeetCode494_TargetSum
         }
 
         return dp[nums.length-1][left];
-
-
-//        int []dp=new int[left+1];
-//        dp[0]=1;
-//
-//
-//        for (int i = 0; i < nums.length; i++)
-//        {
-//            for (int j = left; j >= nums[i]; j--)
-//            {
-////                dp[j]=dp[j-nums[i]]+1;
-//                dp[j]+=dp[j-nums[i]];
-//            }
-//        }
-//        return dp[left];
     }
 
     public static void main(String[] args)

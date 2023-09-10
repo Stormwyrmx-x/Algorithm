@@ -11,7 +11,6 @@ public class EnumTest
         girl(OperationType.TIETIE);
 
     }
-
     public void girl(OperationType operationType)
     {
         switch (operationType)
