@@ -1,6 +1,6 @@
 package com.weng.bag;
 
-public class LeetCode377_CombinationSum
+public class LeetCode377_CombinationSum4
 {
     //todo 排列
     public int combinationSum4(int[] nums, int target) {

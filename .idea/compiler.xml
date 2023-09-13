@@ -10,6 +10,7 @@
         <module name="stack" />
         <module name="array" />
         <module name="tree" />
+        <module name="backtracking" />
         <module name="api" />
         <module name="sort" />
         <module name="dp" />
