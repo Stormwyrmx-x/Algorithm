@@ -1,8 +1,6 @@
 package com.weng;
 
-import java.util.Arrays;
-
-public class ReverseStr
+public class LeetCode541_ReverseStr
 {
     public String reverseStr(String s, int k)
     {

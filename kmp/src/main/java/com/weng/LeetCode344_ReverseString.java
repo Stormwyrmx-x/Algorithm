@@ -1,9 +1,9 @@
 package com.weng;
 
 import java.util.Arrays;
-import java.util.Collections;
+import java.util.List;
 
-public class ReverseString
+public class LeetCode344_ReverseString
 {
     public void reverseString(char[] s)
     {
