@@ -1,9 +1,6 @@
 package com.weng;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
 public class PreorderTraversal
 {
@@ -34,7 +31,7 @@ public class PreorderTraversal
         Node binaryTree= new Node(1, new Node(2, new Node(5), null), new Node(3, null, null));
         ArrayList<Integer>arrayList=new ArrayList<>();
         preorder(binaryTree,arrayList);
-        System.out.println(arrayList.toString());
+        System.out.println(arrayList);
     }
     public static void preorder(Node binaryTree, ArrayList<Integer> arrayList)
     {

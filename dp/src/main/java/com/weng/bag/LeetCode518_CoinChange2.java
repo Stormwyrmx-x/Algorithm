@@ -1,6 +1,6 @@
 package com.weng.bag;
 
-public class LeetCode518_CoinChange
+public class LeetCode518_CoinChange2
 {
     public int change(int amount, int[] coins) {
         int[][]dp=new int[coins.length][amount+1];//选取前0~i个硬币，他们的和为amount，有几种方法

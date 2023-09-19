@@ -28,4 +28,12 @@ public class StringTest
         System.out.println(Arrays.toString(bytes));
         System.out.println(new String(bytes,0,1));
     }
+
+    @Test
+    public void arrayTest()
+    {
+        char[] charArray = {'1','a','b','c'};
+        charArray[2]=77;
+        System.out.println(charArray);
+    }
 }

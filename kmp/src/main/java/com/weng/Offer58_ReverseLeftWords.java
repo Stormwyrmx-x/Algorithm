@@ -1,6 +1,6 @@
 package com.weng;
 
-public class ReverseLeftWords
+public class Offer58_ReverseLeftWords
 {
     public String reverseLeftWords(String s, int n)
     {

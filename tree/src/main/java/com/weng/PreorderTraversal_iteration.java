@@ -1,34 +1,27 @@
 package com.weng;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
-import java.util.Stack;
 
 public class PreorderTraversal_iteration
 {
-    public List<Integer> preorderTraversal(TreeNode root) {
-        ArrayList<Integer> result=new ArrayList<>();
-        Stack<TreeNode>stack=new Stack<>();
-//        if (root==null)
-//        {
-//            return result;
-//        }
-        stack.push(root);
-
+    public List<Integer> preorderTraversal(TreeNode root)
+    {
+        ArrayList<Integer>result=new ArrayList<>();
+        LinkedList<TreeNode>stack=new LinkedList<>();
+        stack.addLast(root);
         while (!stack.isEmpty())
         {
-            TreeNode node = stack.pop();
-            if (node!=null)
-            {
-                result.add(node.value);
-            }
-            else
+            TreeNode node = stack.removeLast();
+            if (node==null)
             {
                 continue;
             }
-            stack.push(node.left);
-            stack.push(node.right);
+            result.add(node.val);
+            //先加右子节点、后加左子节点
+            stack.addLast(node.right);
+            stack.addLast(node.left);
         }
 
         return result;

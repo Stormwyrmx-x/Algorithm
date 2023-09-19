@@ -2,23 +2,24 @@ package com.weng;
 
 public class TreeNode
 {
-    Integer value;
+    int val;
     TreeNode left;
     TreeNode right;
 
-    public TreeNode(Integer value, TreeNode left, TreeNode right)
+    TreeNode()
     {
-        this.value = value;
-        this.left = left;
-        this.right = right;
+
     }
 
-    public TreeNode(Integer value)
+    TreeNode(int val)
     {
-        this.value = value;
+        this.val=val;
+    }
+    TreeNode(int val,TreeNode left,TreeNode right)
+    {
+        this.val=val;
+        this.left=left;
+        this.right=right;
     }
 
-    public TreeNode()
-    {
-    }
 }

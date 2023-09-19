@@ -4,23 +4,17 @@ public class LeetCode541_ReverseStr
 {
     public String reverseStr(String s, int k)
     {
-        char[] array = s.toCharArray();
-        for (int i = 0; i < s.length(); i+=2*k)
+        int i1 = s.indexOf(s);
+        char[] charArray = s.toCharArray();
+        for (int i = 0; i < charArray.length; i+=2*k)
         {
-            if (i+k<=s.length())
+            if (i+k<s.length())
             {
-                reverseString(array,i,i+k-1);
-
+                reverseString(charArray,i,i+k-1);
             }
-            else
-            {
-                reverseString(array,i,s.length()-1);
-            }
-
+            reverseString(charArray,i,s.length()-1);
         }
-
-
-        return new String(array);
+        return new String(charArray);
     }
     public void reverseString(char[] s,int begin,int end)
     {

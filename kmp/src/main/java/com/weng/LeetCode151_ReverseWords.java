@@ -2,7 +2,7 @@ package com.weng;
 
 import java.util.*;
 
-public class ReverseWords
+public class LeetCode151_ReverseWords
 {
     public static void main(String[] args)
     {
@@ -12,15 +12,17 @@ public class ReverseWords
     public static String reverseWords(String s)
     {
         String trim = s.trim();
-        String[] split = trim.split("\\s");
-        List<String>s1 = Arrays.asList(split);
+        String[] split = trim.split("\\s+");
+//        List<String> list = List.of(split);
+//        System.out.println(list);
+        List<String>list = Arrays.asList(split);
 //        List<String>s2=new ArrayList<>();
 //        Collections.addAll(s2,trim.split("\\s+"));
 //        System.out.println(s2);
-        Collections.reverse(s1);
+        Collections.reverse(list);
 //        StringJoiner stringJoiner=new StringJoiner(" ");
 //        s1.forEach(stringJoiner::add);
 //        return stringJoiner.toString();
-        return String.join(" ",s1);
+        return String.join(" ",list);
     }
 }

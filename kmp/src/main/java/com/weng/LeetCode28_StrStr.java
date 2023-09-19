@@ -1,6 +1,6 @@
 package com.weng;
 
-public class  StrStr
+public class LeetCode28_StrStr
 {
     public int strStr(String haystack, String needle)
     {

@@ -1,30 +1,29 @@
 package com.weng;
+
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
-import java.util.Stack;
+
 public class InorderTraversal_iteration
 {
-    public List<Integer> inorderTraversal(TreeNode root)
-    {
-        ArrayList<Integer>result=new ArrayList<>();
-        Stack<TreeNode>stack=new Stack<>();
-        TreeNode cur=root;
-        while (cur!=null||!stack.isEmpty())
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer>result=new ArrayList<>();
+        LinkedList<TreeNode>stack=new LinkedList<>();
+        TreeNode current=root;
+        while (!stack.isEmpty()||current!=null)
         {
-            if (cur!=null)
+            if (current!=null)
             {
-                stack.push(cur);
-                cur=cur.left;
+                stack.addLast(current);
+                current=current.left;
             }
             else
             {
-                TreeNode pop = stack.pop();
-                result.add(pop.value);
-                cur=pop.right;
+                current=stack.removeLast();
+                result.add(current.val);
+                current=current.right;
             }
         }
         return result;
     }
-
 }

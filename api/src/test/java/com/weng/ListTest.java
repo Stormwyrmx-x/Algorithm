@@ -14,6 +14,9 @@ public class ListTest
     {
         List<List<Integer>>list=new ArrayList<>();
         List<Integer>listTest=new ArrayList<>();
+//        System.out.println(list);
+//        list.add(listTest);
+//        System.out.println(list);
         listTest.add(1);
         listTest.add(2);
         list.add(listTest);
@@ -23,6 +26,13 @@ public class ListTest
         System.out.println(list1.equals(listTest));
         System.out.println(list1.containsAll(listTest));
         System.out.println(list.contains(list1));
+    }
+    @Test
+    public void nullTest()
+    {
+        List<Integer>list=new ArrayList<>();
+//        list.add(null);
+        System.out.println(list.size());
     }
 
 }
