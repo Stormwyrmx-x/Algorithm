@@ -6,6 +6,9 @@ public class Node
 {
     int val;
     List<Node>children;
+    Node left;
+    Node right;
+    Node next;
 
     public Node()
     {
