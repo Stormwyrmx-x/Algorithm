@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="stack" />
+        <module name="string" />
         <module name="array" />
         <module name="tree" />
         <module name="backtracking" />
@@ -15,7 +16,6 @@
         <module name="sort" />
         <module name="dp" />
         <module name="basic" />
-        <module name="kmp" />
       </profile>
     </annotationProcessing>
   </component>
