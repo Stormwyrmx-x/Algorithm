@@ -16,6 +16,7 @@
         <module name="sort" />
         <module name="dp" />
         <module name="basic" />
+        <module name="LinkList" />
       </profile>
     </annotationProcessing>
   </component>
