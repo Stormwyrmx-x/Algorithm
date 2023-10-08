@@ -16,4 +16,16 @@ public class GirlTest
         System.out.println(girl2);
         System.out.println(girl3);
     }
+
+    @Test
+    public void test2()
+    {
+        Girl girl=new Girl("husiqi",21);
+        Girl girl1=girl;
+        girl.setName("houchengcheng");
+        System.out.println(girl1);
+        girl1.setName("yangsihui");
+        System.out.println(girl1);
+        System.out.println(girl);
+    }
 }
