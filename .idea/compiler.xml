@@ -17,6 +17,7 @@
         <module name="dp" />
         <module name="basic" />
         <module name="LinkList" />
+        <module name="hash" />
       </profile>
     </annotationProcessing>
   </component>
