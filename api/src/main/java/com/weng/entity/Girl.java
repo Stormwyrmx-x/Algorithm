@@ -43,6 +43,11 @@ public class Girl implements Serializable,Comparable<Girl>
     @Override
     public int compareTo(Girl o)
     {
-        return this.age-o.age;
+        int difference=this.age-o.age;
+        if (difference==0)
+        {
+            difference=this.name.compareTo(o.name);
+        }
+        return difference;
     }
 }
