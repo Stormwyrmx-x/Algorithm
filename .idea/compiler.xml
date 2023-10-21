@@ -11,6 +11,7 @@
         <module name="string" />
         <module name="array" />
         <module name="tree" />
+        <module name="greedy" />
         <module name="backtracking" />
         <module name="api" />
         <module name="sort" />
