@@ -26,6 +26,7 @@ public class LeetCode39_CombinationSum
             }
             return;
         }
+
         for (int i = startIndex; i < candidates.length&&sum+candidates[i]<=target; i++)
         {
             sum+=candidates[i];
