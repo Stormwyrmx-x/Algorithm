@@ -1,6 +1,5 @@
 package com.weng.file;
 
-import java.io.File;
 import java.io.IOException;
 
 public class Exam1

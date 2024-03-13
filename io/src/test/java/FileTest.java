@@ -1,5 +1,3 @@
-package com.weng;
-
 import org.junit.Test;
 
 import java.io.File;

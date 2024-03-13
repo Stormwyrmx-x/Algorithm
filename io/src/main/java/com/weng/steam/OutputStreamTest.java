@@ -1,10 +1,7 @@
-package com.weng.io;
+package com.weng.steam;
 
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.Arrays;
 
 public class OutputStreamTest
 {

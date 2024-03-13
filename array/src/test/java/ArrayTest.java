@@ -1,9 +1,11 @@
+import org.junit.Test;
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.ZoneId;
 
-public class Test
+public class ArrayTest
 {
     public static void main(String[] args)
     {
@@ -21,5 +23,4 @@ public class Test
         System.out.println(LocalTime.of(1,1,1));
 
     }
-
 }

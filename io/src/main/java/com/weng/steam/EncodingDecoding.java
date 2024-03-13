@@ -1,7 +1,6 @@
-package com.weng.io;
+package com.weng.steam;
 
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 
 public class EncodingDecoding
